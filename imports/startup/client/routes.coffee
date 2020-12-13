@@ -24,13 +24,6 @@ import '/imports/ui/pages/home.coffee'
 # FRONT
 
 FlowRouter.route '/',
-  name: 'gate'
-  action: ->
-    unless Meteor.userId() and Meteor.loggingIn()
-      BlazeLayout.render 'app', main: 'gate'
-    else FlowRouter.go 'home'
-
-FlowRouter.route '/home',
   name: 'home'
   action: ->
     BlazeLayout.render 'app', main: 'home'
