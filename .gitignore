@@ -1,0 +1,73 @@
+# SENSITIVE
+.npmrc
+settings-dev.json
+settings-prod.json
+
+# METEOR
+node_modules/
+
+# NPM
+package-lock.json
+
+# COMPILED SOURCE
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# PACKAGES
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# LOGS AND DATABASES
+*.log
+*.sql
+*.sqlite
+
+# OS GENERATED FILES
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IMAGES
+*.jpg
+*.gif
+*.png
+*.svg
+*.ico
+
+# VIDEO
+*.wmv
+*.mpg
+*.mpeg
+*.mp4
+*.mov
+*.flv
+*.avi
+*.ogv
+*.ogg
+*.webm
+
+# AUDIO
+*.wav
+*.mp3
+*.wma
+
+# FONTS / ICONS
+*.eot
+*.ttf
+*.woff
+*.woff2
+*.otf
