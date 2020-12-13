@@ -1,0 +1,29 @@
+body
+  background: rgba(gray, .1)
+
+#app
+  // position
+  position:   relative
+  // size
+  min-height: 100%
+  min-width:  100%
+  // content
+  display:    flex
+
+.page
+  // position
+  position: relative
+  // content
+  display: flex
+  flex-direction: column
+  // spacing
+  padding: 1em
+  padding-top: 7.5em
+  // BUG: issue with scrollbar on overflow hidden with modals
+  // .main
+  //   @media (max-width: 799px)
+  //     width: 100%
+  //   @media (min-width: 800px)
+  //     width: 600px
+  //   @media (min-width: 1200px)
+  //     width: 800px

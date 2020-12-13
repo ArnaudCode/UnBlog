@@ -1,1 +1,1 @@
-Je fais un blog avec Meteor / Blaze
+Arnaud fait un blog !
