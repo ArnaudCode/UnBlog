@@ -1,0 +1,2 @@
+// TEMPLATES
+import './navbar.html';

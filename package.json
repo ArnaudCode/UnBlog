@@ -8,30 +8,88 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "meteor run --settings settings-dev.json",
-    "lint": "eslint --ext .js,.jsx .",
-    "upgrade": "meteor npm update && meteor update --all-packages",
-    "reset": "meteor reset && meteor npm prune && meteor npm start",
-    "fresh": "meteor npm run upgrade && meteor npm run reset",
-    "ios": "meteor run ios --settings settings-dev.json",
-    "ios-device": "meteor run ios-device --settings settings-dev.json",
-    "android": "meteor run android --settings settings-dev.json",
-    "deploy": "DEPLOY_HOSTNAME=eu-west-1.galaxy.meteor.com meteor deploy www.madl3ss.com --settings settings.json"
+    "start": "meteor",
+    "pretest": "npm run lint --silent",
+    "test": "TEST_BROWSER_DRIVER=nightmare meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_BROWSER_DRIVER=nightmare meteor test --full-app --once --driver-package meteortesting:mocha",
+    "test-watch": "TEST_BROWSER_DRIVER=nightmare meteor test --driver-package meteortesting:mocha",
+    "test-app-watch": "TEST_BROWSER_DRIVER=nightmare meteor test --full-app --driver-package meteortesting:mocha",
+    "test-watch-terminal": "TEST_WATCH=1 TEST_BROWSER_DRIVER=nightmare meteor test --driver-package meteortesting:mocha",
+    "test-app-watch-terminal": "TEST_WATCH=1 TEST_BROWSER_DRIVER=nightmare meteor test --full-app --driver-package meteortesting:mocha",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
     "@fortawesome/fontawesome-free": "^5.15.1",
+    "autoprefixer": "^10.1.0",
     "bcrypt": "^5.0.0",
     "jquery": "^3.5.1",
     "meteor-node-stubs": "^1.0.1",
-    "normalize.css": "^8.0.1",
-    "simpl-schema": "^1.10.2"
+    "postcss": "^8.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-import-resolver-meteor": "^0.4.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-meteor": "^7.2.2",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0"
   },
   "meteor": {
     "mainModule": {
-      "client": "client/main.coffee",
-      "server": "server/main.coffee"
+      "client": "client/main.js",
+      "server": "server/main.js"
     },
-    "testModule": "tests/main.coffee"
+    "testModule": "tests/main.js"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "allowImportExportEverywhere": true
+    },
+    "plugins": [
+      "meteor"
+    ],
+    "extends": [
+      "airbnb",
+      "plugin:meteor/recommended"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": "off",
+      "import/prefer-default-export": "off",
+      "no-underscore-dangle": "off",
+      "object-shorthand": [
+        "error",
+        "always",
+        {
+          "avoidQuotes": false
+        }
+      ],
+      "meteor/eventmap-params": [
+        "error",
+        {
+          "eventParamName": "event",
+          "templateInstanceParamName": "instance"
+        }
+      ],
+      "meteor/template-names": [
+        "off"
+      ]
+    },
+    "settings": {
+      "import/resolver": "meteor"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          "last 2 versions"
+        ]
+      }
+    }
   }
 }

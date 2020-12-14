@@ -1,0 +1,2 @@
+// TEMPLATE
+import './home.html';
