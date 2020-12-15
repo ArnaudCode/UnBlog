@@ -15,8 +15,8 @@ FlowRouter.route('/', {
 });
 
 // NOT FOUND
-FlowRouter.notFound = {
+FlowRouter.route('*', {
   action() {
     this.render('App_Body', 'Page_NotFound');
   },
-};
+});

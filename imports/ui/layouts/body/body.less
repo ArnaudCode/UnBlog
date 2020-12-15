@@ -1,0 +1,55 @@
+html {
+  font-family: Helvetica;
+}
+
+#App_Body {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: stretch;
+
+  #App_Navbar {
+    padding: 1em;
+    width: 12em;
+    border-right: gray solid 1px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        border: black dotted 1px;
+        // box-shadow: 1em 1em 1em gray;
+        // height: 3em;
+        display: flex;
+        // padding: 0.5em;
+        margin-bottom: 1em;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          transition: 300ms;
+          flex: auto;
+          padding: 0.5em;
+          text-decoration: none;
+          color: black;
+          &:hover {
+            background-color: yellow;
+          }
+        }
+      }
+      p {
+        text-align: center;
+        color: gray;
+      }
+    }
+  }
+
+  .Page {
+    flex-grow: 1;
+    padding: 1em;
+    h1 {
+      margin: 0;
+    }
+  }
+}

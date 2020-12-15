@@ -9,12 +9,7 @@ tracker                 # Meteor's client-side reactive programming library
 # check                   # ...
 # email                   # ...
 jquery                  # Wrapper package for npm-installed jquery
-# underscore              # ...
-
-# TRANSPILERS
-coffeescript            # CoffeeScript (> JavaScript) support
-mquandalle:jade         # Jade - now Pug - (> HTML/Blaze) support
-coagmano:stylus         # Stylus (> CSS) support
+less                    # ...
 
 # STATE
 reactive-var            # Reactive variable for tracker
@@ -80,6 +75,8 @@ standard-minifier-js    # JS minifier run for production mode
 # momentjs:moment       # ...
 
 # DEV
+# autopublish
+# insecure
 # meteortoys:allthings  # ...
-meteortesting:mocha               # A package for writing and running your meteor app and package tests with mocha
-johanbrook:publication-collector  # Test a Meteor publication by collecting its output
+# meteortesting:mocha               # A package for writing and running your meteor app and package tests with mocha
+# johanbrook:publication-collector  # Test a Meteor publication by collecting its output

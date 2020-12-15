@@ -4,6 +4,9 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { Template } from 'meteor/templating';
 
+// NPM MODULES
+import 'normalize.css';
+
 // TEMPLATE
 import './body.html';
 

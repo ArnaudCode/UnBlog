@@ -1,3 +1,21 @@
 <template name="App_Navbar">
-  Navbar
+  <nav id="App_Navbar">
+    <ul>
+      {{#each post in posts}}
+        {{> Navbar_Post (post)}}
+      {{else}}
+        {{> Navbar_NoPost}}
+      {{/each}}
+    </ul>
+  </nav>
+</template>
+
+<template name="Navbar_Post">
+  <li>
+    <a href="#">{{title}}</a>
+  </li>
+</template>
+
+<template name="Navbar_NoPost">
+  <p>No post for the time being!</p>
 </template>

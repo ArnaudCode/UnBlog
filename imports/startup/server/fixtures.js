@@ -1,6 +1,5 @@
 // METEOR PACKAGES
 import { Meteor } from 'meteor/meteor';
-// import { Mongo } from 'meteor/mongo';
 
 // COLLECTIONS
 import { Posts } from '../../api/posts/posts';
