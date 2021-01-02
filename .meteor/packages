@@ -1,37 +1,30 @@
 # METEOR
 meteor-base             # Packages every Meteor app needs to have
+# jquery                  # Wrapper package for npm-installed jquery
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 typescript              # Enable TypeScript syntax in .ts and .tsx modules
 es5-shim                # ECMAScript 5 compatibility for older browsers
 tracker                 # Meteor's client-side reactive programming library
 
+# UI
+static-html
+svelte:compiler
+rdb:svelte-meteor-data
+
 # STANDARD
 # check                   # ...
 # email                   # ...
-jquery                  # Wrapper package for npm-installed jquery
-less                    # ...
-
-# STATE
-reactive-var            # Reactive variable for tracker
-reactive-dict           # Reactive dictionary for tracker
-# session                 # ...
-# reload                  # ...
 
 # SERVER
 shell-server            # Server-side component of the `meteor shell` command
 
 # COLLECTIONS
 mongo                   # The database Meteor supports right now
-# aldeed:collection2-core # ...
 
 # ROUTER
 # kadira:flow-router
 # kadira:blaze-layout
 ostrio:flow-router-extra
-
-# UI
-blaze-html-templates    # Compile .html files into Meteor Blaze views
-# launch-screen           # ...
 
 # USER
 # accounts-password       # ...

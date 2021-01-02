@@ -1,6 +1,6 @@
 {
-  "name": "ArnaudFaitUnBlog",
-  "description": "Arnaud fait un blog",
+  "name": "App",
+  "description": "Just an app.",
   "private": true,
   "repository": {
     "type": "git",
@@ -9,35 +9,27 @@
   "license": "MIT",
   "scripts": {
     "start": "meteor",
-    "pretest": "npm run lint --silent",
-    "test": "TEST_BROWSER_DRIVER=nightmare meteor test --once --driver-package meteortesting:mocha",
-    "test-app": "TEST_BROWSER_DRIVER=nightmare meteor test --full-app --once --driver-package meteortesting:mocha",
-    "test-watch": "TEST_BROWSER_DRIVER=nightmare meteor test --driver-package meteortesting:mocha",
-    "test-app-watch": "TEST_BROWSER_DRIVER=nightmare meteor test --full-app --driver-package meteortesting:mocha",
-    "test-watch-terminal": "TEST_WATCH=1 TEST_BROWSER_DRIVER=nightmare meteor test --driver-package meteortesting:mocha",
-    "test-app-watch-terminal": "TEST_WATCH=1 TEST_BROWSER_DRIVER=nightmare meteor test --full-app --driver-package meteortesting:mocha",
-    "lint": "eslint ."
+    "lint": "eslint . --ext .js,.svelte --fix"
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
     "@fortawesome/fontawesome-free": "^5.15.1",
+    "@popperjs/core": "^2.6.0",
     "autoprefixer": "^10.1.0",
     "bcrypt": "^5.0.0",
-    "jquery": "^3.5.1",
+    "bootstrap": "^5.0.0-beta1",
     "meteor-node-stubs": "^1.0.1",
     "normalize.css": "^8.0.1",
-    "postcss": "^8.2.1"
+    "postcss": "^8.2.1",
+    "svelte": "^3.27.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.15.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-import-resolver-meteor": "^0.4.0",
+    "eslint": "^7.16.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-meteor": "^7.2.2",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-svelte3": "^3.0.0"
   },
   "meteor": {
     "mainModule": {
@@ -45,44 +37,6 @@
       "server": "server/main.js"
     },
     "testModule": "tests/main.js"
-  },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "parserOptions": {
-      "allowImportExportEverywhere": true
-    },
-    "plugins": [
-      "meteor"
-    ],
-    "extends": [
-      "airbnb",
-      "plugin:meteor/recommended"
-    ],
-    "rules": {
-      "import/no-extraneous-dependencies": "off",
-      "import/prefer-default-export": "off",
-      "no-underscore-dangle": "off",
-      "object-shorthand": [
-        "error",
-        "always",
-        {
-          "avoidQuotes": false
-        }
-      ],
-      "meteor/eventmap-params": [
-        "error",
-        {
-          "eventParamName": "event",
-          "templateInstanceParamName": "instance"
-        }
-      ],
-      "meteor/template-names": [
-        "off"
-      ]
-    },
-    "settings": {
-      "import/resolver": "meteor"
-    }
   },
   "postcss": {
     "plugins": {

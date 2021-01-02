@@ -1,0 +1,16 @@
+html {
+  font-family: arial;
+  background: pink;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+#app {
+  min-height: 100%;
+}
