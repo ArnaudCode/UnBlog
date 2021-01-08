@@ -11,21 +11,21 @@
   <hr />
   <nav id="navigation">
     <ul>
-      <li><a href="#"><span>home</span></a></li>
-      <li><a href="#"><span>blog</span></a></li>
-      <li><a href="#"><span>stories</span></a></li>
-      <li><a href="#"><span>chat</span></a></li>
-      <li><a href="#"><span>streaming</span></a></li>
-      <li><a href="#"><span>support</span></a></li>
-      <li><a href="#"><span>shop</span></a></li>
+      <li><a href="/home"><span>home</span></a></li>
+      <li><a href="/blog"><span>blog</span></a></li>
+      <li><a href="/stories"><span>stories</span></a></li>
+      <li><a href="/chat"><span>chat</span></a></li>
+      <li><a href="/stream"><span>stream</span></a></li>
+      <li><a href="/support"><span>support</span></a></li>
+      <li><a href="/shop"><span>shop</span></a></li>
     </ul>
   </nav>
   <hr />
   <footer>
     <ul>
-      <li><a href="#"><span>about</span></a></li>
-      <li><a href="#"><span>privacy</span></a></li>
-      <li><a href="#"><span>terms</span></a></li>
+      <li><a href="/about"><span>about</span></a></li>
+      <li><a href="/privacy"><span>privacy</span></a></li>
+      <li><a href="/terms"><span>terms</span></a></li>
     </ul>
   </footer>
 </div>
