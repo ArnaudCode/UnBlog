@@ -1,16 +1,12 @@
 <script></script>
 
 <div id="navbar">
-  <form id="login">
-    <input placeholder="username" />
-    <input placeholder="password" />
-    <button type="submit">submit</button>
-  </form>
-  <hr />
-  <input id="search" placeholder="search" />
-  <hr />
   <nav id="navigation">
     <ul>
+      <li><a href="/login"><span>login</span></a></li>
+      <hr />
+      <input id="search" placeholder="search" />
+      <hr />
       <li><a href="/home"><span>home</span></a></li>
       <li><a href="/blog"><span>blog</span></a></li>
       <li><a href="/stories"><span>stories</span></a></li>
