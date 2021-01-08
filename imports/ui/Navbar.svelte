@@ -14,16 +14,12 @@
       <li><a href="/stream"><span>stream</span></a></li>
       <li><a href="/support"><span>support</span></a></li>
       <li><a href="/shop"><span>shop</span></a></li>
-    </ul>
-  </nav>
-  <hr />
-  <footer>
-    <ul>
+      <hr />
       <li><a href="/about"><span>about</span></a></li>
       <li><a href="/privacy"><span>privacy</span></a></li>
       <li><a href="/terms"><span>terms</span></a></li>
     </ul>
-  </footer>
+  </nav>
 </div>
 
 <style>
