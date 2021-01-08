@@ -12,9 +12,9 @@
     <Card />
     <Card />
   </main>
-  <aside>
+  <!-- <aside>
     <p>aside</p>
-  </aside>
+  </aside> -->
 </div>
 
 <style>
