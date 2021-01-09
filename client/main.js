@@ -1,11 +1,2 @@
-// import '../imports/startup/client';
-// import '../imports/startup/both';
-
-import { Meteor } from 'meteor/meteor';
-import App from '../imports/ui/App.svelte';
-
-Meteor.startup(() => {
-  new App({
-    target: document.getElementById('app')
-  });
-});
+import '../imports/startup/client';
+import '../imports/startup/both';

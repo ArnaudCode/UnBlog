@@ -1,25 +1,28 @@
 # METEOR
-meteor-base@1.4.0             # Packages every Meteor app needs to have
-# jquery                  # Wrapper package for npm-installed jquery
-ecmascript@0.14.4              # Enable ECMAScript2015+ syntax in app code
-typescript@4.1.2              # Enable TypeScript syntax in .ts and .tsx modules
-es5-shim@4.8.0                # ECMAScript 5 compatibility for older browsers
-tracker@1.2.0                 # Meteor's client-side reactive programming library
+meteor-base
+ecmascript
+typescript
+es5-shim
+jquery
+tracker
+
+# TRANSPILERS
+coffeescript
+mquandalle:jade
+less
 
 # UI
-static-html
-svelte:compiler
-rdb:svelte-meteor-data
+blaze-html-templates
 
 # STANDARD
-# check                   # ...
-# email                   # ...
+# check
+# email
 
 # SERVER
-shell-server@0.5.0            # Server-side component of the `meteor shell` command
+shell-server
 
 # COLLECTIONS
-mongo@1.10.1                   # The database Meteor supports right now
+mongo
 
 # ROUTER
 # kadira:flow-router
@@ -27,30 +30,30 @@ mongo@1.10.1                   # The database Meteor supports right now
 ostrio:flow-router-extra
 
 # USER
-# accounts-password       # ...
+# accounts-password
 # splendido:accounts-emails-field
 # splendido:accounts-meld
 # alanning:roles
 # mizzao:user-status
-# jparker:gravatar        # ...
+# jparker:gravatar
 
 # SOCIAL
-# service-configuration   # ...
-# accounts-facebook       # ...
-# accounts-google         # ...
-# accounts-twitter        # ...
-# accounts-github         # ...
-# accounts-meetup         # ...
-# accounts-meteor-developer # ...
+# service-configuration
+# accounts-facebook
+# accounts-google
+# accounts-twitter
+# accounts-github
+# accounts-meetup
+# accounts-meteor-developer
 
 # I18N
-# tap:i18n              # ...
+# tap:i18n
 
 # ADMIN
-# matadur:flow-db-admin # ...
+# matadur:flow-db-admin
 
 # MOBILE
-mobile-experience@1.1.0       # Packages for a great mobile UX
+mobile-experience
 # crosswalk               # ...
 # chriswessels:hammer     # ...
 
@@ -58,8 +61,8 @@ mobile-experience@1.1.0       # Packages for a great mobile UX
 # ddp-rate-limiter
 
 # PRODUCTION
-standard-minifier-css@1.7.1   # CSS minifier run for production mode
-standard-minifier-js@2.6.0    # JS minifier run for production mode
+standard-minifier-css
+standard-minifier-js
 
 # OWN PACKAGES
 # ...
