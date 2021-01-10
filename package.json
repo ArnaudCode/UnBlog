@@ -1,10 +1,10 @@
 {
   "name": "App",
-  "description": "Just an app.",
+  "description": "Just an app",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/ArnaudFait/UnBlog.git"
+    "url": "https://github.com/ArnaudCode/UnBlog.git"
   },
   "license": "MIT",
   "scripts": {
@@ -14,14 +14,11 @@
   "dependencies": {
     "@babel/runtime": "^7.11.2",
     "@fortawesome/fontawesome-free": "^5.15.1",
-    "@popperjs/core": "^2.6.0",
-    "autoprefixer": "^10.1.0",
     "bcrypt": "^5.0.0",
-    "bootstrap": "^5.0.0-beta1",
     "meteor-node-stubs": "^1.0.1",
     "normalize.css": "^8.0.1",
-    "postcss": "^8.2.1",
-    "svelte": "^3.27.0"
+    "svelte": "^3.27.0",
+    "tinro": "^0.5.6"
   },
   "devDependencies": {
     "eslint": "^7.16.0",
@@ -29,8 +26,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^5.0.0",
-    "eslint-plugin-svelte3": "^3.0.0",
-    "tinro": "^0.5.6"
+    "eslint-plugin-svelte3": "^3.0.0"
   },
   "meteor": {
     "mainModule": {
@@ -38,14 +34,5 @@
       "server": "server/main.js"
     },
     "testModule": "tests/main.js"
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {
-        "browsers": [
-          "last 2 versions"
-        ]
-      }
-    }
   }
 }

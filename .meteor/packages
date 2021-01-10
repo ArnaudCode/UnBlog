@@ -1,6 +1,5 @@
 # METEOR
 meteor-base
-# jquery
 ecmascript
 typescript
 es5-shim
@@ -11,48 +10,14 @@ static-html
 svelte:compiler
 rdb:svelte-meteor-data
 
-# STANDARD
-# check
-# email
-
 # SERVER
 shell-server
 
 # COLLECTIONS
 mongo
 
-# ROUTER
-# kadira:flow-router
-# kadira:blaze-layout
-ostrio:flow-router-extra
-
-# USER
-# accounts-password
-# splendido:accounts-emails-field
-# splendido:accounts-meld
-# alanning:roles
-# mizzao:user-status
-# jparker:gravatar
-
-# SOCIAL
-# service-configuration
-# accounts-facebook
-# accounts-google
-# accounts-twitter
-# accounts-github
-# accounts-meetup
-# accounts-meteor-developer
-
-# I18N
-# tap:i18n
-
-# ADMIN
-# matadur:flow-db-admin
-
 # MOBILE
 mobile-experience
-# crosswalk
-# chriswessels:hammer
 
 # SECURITY
 # ddp-rate-limiter
@@ -60,16 +25,3 @@ mobile-experience
 # PRODUCTION
 standard-minifier-css
 standard-minifier-js
-
-# OWN PACKAGES
-# ...
-
-# UTILTIES
-# momentjs:moment
-
-# DEV
-# autopublish
-# insecure
-# meteortoys:allthings
-# meteortesting:mocha
-# johanbrook:publication-collector

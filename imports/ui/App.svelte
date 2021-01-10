@@ -1,27 +1,42 @@
 <script>
   import 'normalize.css';
   import { Route } from 'tinro';
+
   import Navbar from './Navbar.svelte';
-  import Page from './Page.svelte';
+  import routes from '../startup/client/routes';
+
+  let appElement = document.getElementById('app');
+
+  function toggleNav() {
+    appElement.classList.toggle('navbarHidden');
+  }
+
 </script>
 
-<Navbar/>
-<!-- <Page /> -->
-<main>
-  <Route path="/">home</Route>
-  <Route path="/blog">blog</Route>
-  <Route path="/stories">stories</Route>
-  <Route path="/chat">chat</Route>
-</main>
+<Navbar {routes} />
+
+{#each routes as route}
+  <Route path={route.path}>
+    <main>
+      <h1>{route.name}</h1>
+      <button on:click={toggleNav}>toggle</button>
+
+
+    </main>
+  </Route>
+{/each}
 
 <style>
-
   main {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-left: 12.5vw;
-    position: relative;
-    width: 37.5vw;
+    position: absolute;
+    left: 7.5rem;
+    padding: 1rem;
+    transition: left .3s;
+  }
+
+  main h1 {
+    text-transform: capitalize;
+    margin: 0;
   }
 
 </style>

@@ -1,6 +1,5 @@
 html {
   font-family: arial;
-  background: lightgray;
 }
 
 html * {
@@ -13,4 +12,12 @@ html, body {
 
 #app {
   min-height: 100%;
+}
+
+#app.navbarHidden > nav {
+  left: -7.5em;
+}
+
+#app.navbarHidden > main {
+  left: 0;
 }
