@@ -1,4 +1,8 @@
-<script></script>
+<script>
+
+
+
+</script>
 
 <div id="navbar">
   <form id="login">
@@ -11,7 +15,7 @@
   <hr />
   <nav id="navigation">
     <ul>
-      <li><a href="/home"><span>home</span></a></li>
+      <li><a href="/"><span>home</span></a></li>
       <li><a href="/blog"><span>blog</span></a></li>
       <li><a href="/stories"><span>stories</span></a></li>
       <li><a href="/chat"><span>chat</span></a></li>

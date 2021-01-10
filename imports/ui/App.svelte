@@ -6,6 +6,22 @@
 </script>
 
 <Navbar/>
-<Page />
+<!-- <Page /> -->
+<main>
+  <Route path="/">home</Route>
+  <Route path="/blog">blog</Route>
+  <Route path="/stories">stories</Route>
+  <Route path="/chat">chat</Route>
+</main>
 
-<style></style>
+<style>
+
+  main {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 12.5vw;
+    position: relative;
+    width: 37.5vw;
+  }
+
+</style>
