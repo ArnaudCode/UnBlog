@@ -31,7 +31,7 @@
     justify-content: flex-end;
     align-items: center;
     margin-bottom: .5rem;
-    border-right: 0 solid gray;
+    border-right: 0 solid white;
     transition: border-right .3s;
   }
 

@@ -20,8 +20,6 @@
     <main>
       <h1>{route.name}</h1>
       <button on:click={toggleNav}>toggle</button>
-
-
     </main>
   </Route>
 {/each}
